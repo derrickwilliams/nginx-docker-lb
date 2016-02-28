@@ -1,3 +1,4 @@
 FROM nginx
 
+ADD nginx/upstreams.conf /etc/nginx/upstreams.conf
 ADD nginx/default.conf /etc/nginx/conf.d/default.conf
