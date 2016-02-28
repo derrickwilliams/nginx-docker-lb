@@ -1,0 +1,27 @@
+version: '2'
+services:
+  nginx:
+    image: swarmer_nginx
+    ports:
+      - "5555:80"
+
+  nodeapp1:
+    image: swarmer
+    depends_on:
+      - nginx
+    ports:
+      - "5556:5555"
+
+  nodeapp2:
+    image: swarmer
+    depends_on:
+      - nginx
+    ports:
+      - "5557:5555"
+
+  nodeapp3:
+    image: swarmer
+    depends_on:
+      - nginx
+    ports:
+      - "5558:5555"
