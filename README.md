@@ -1,3 +1,8 @@
+## prepare
+```bash
+npm install
+```
+
 ## build images
 ```bash
 docker build -t swarmer -f Dockerfile.nodeapp .
