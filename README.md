@@ -18,4 +18,4 @@ docker-compose up
 ```
 
 ## see it work
-* go to http://192.168.99.100
+* go to http://192.168.99.100:5555
